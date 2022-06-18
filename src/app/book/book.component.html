@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Create Book</h2>
+    <p>message</p>
+
+
+    <label for="bookName"><b>Book Name</b></label>
+    <input type="text" placeholder="Enter Book Name" name="bookName" id="bookName" required [(ngModel)]="book.bookName">
+
+    <label for="bookAuthor"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Book Author" name="bookAuthor" id="bookAuthor" required [(ngModel)]="book.bookAuthor">
+
+    <label for="bookPrice"><b>Price</b></label>
+    <input type="number" placeholder="Enter Book Price" name="bookPrice" id="bookPrice" required [(ngModel)]="book.bookPrice">
+
+
+    <hr>
+
+    <button type="submit" class="registerbtn" (click)="createBook()">Create</button>
+</div>

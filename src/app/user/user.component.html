@@ -1,0 +1,28 @@
+<div class="container">
+    <h2>Register</h2>
+    <p>{{message}}</p>
+
+
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" id="name" required [(ngModel)]="user.name">
+
+    <label for="lastName"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lastName" id="lastName" required [(ngModel)]="user.lastName">
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter email" name="email" id="email" required [(ngModel)]="user.email">
+
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" id="username" required [(ngModel)]="user.username">
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pass" id="pass" required [(ngModel)]="user.pass">
+
+    <hr>
+
+    <button type="submit" class="registerbtn" (click)="registerNow()">Register</button>
+</div>
+
+<div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+</div>
